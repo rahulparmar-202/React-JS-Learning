@@ -12,13 +12,17 @@ function App() {
 
   // to add value
   const addValue = () => {
-    if (counter >= 20) {
-      // when counter is either 20 or more than 20 , then will not add more.
-      setCounter(counter);
-    } else {
-      // 2nd Way
-      setCounter(counter + 1);
-    }
+    /* if (counter >= 20) {
+       // when counter is either 20 or more than 20 , then will not add more.
+       setCounter(counter);
+     } else {
+       // 2nd Way
+       setCounter(counter + 1);
+     }
+ */
+
+    // ternary operator
+    (counter >= 20)?setCounter(counter):setCounter(counter+1)
 
     /* //1 way
      counter = counter + 1
@@ -28,12 +32,17 @@ function App() {
 
   // to remove value
   const removeValue = () => {
+    /*
     if (counter <= 0) {
       // when counter is either 0 or less than 0 , then will not remove values
       setCounter(counter);
     } else {
       setCounter(counter - 1);
     }
+      */
+
+    // ternary operator
+    (counter <= 0) ? setCounter(counter) : setCounter(counter - 1)
   };
 
   return (
