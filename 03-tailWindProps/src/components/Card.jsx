@@ -2,9 +2,11 @@
 import React from "react";
 
 // passing props -> userName , btnText  (default value)
+// props are variables that carries some value... declared here and later can be used in App.jsx at Passing componenets/returning
 function Card({userName,btnText="visit me"}) {
    console.log(userName);
     
+   // a card using Tailwind CSS
     return (
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
